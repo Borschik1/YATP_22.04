@@ -27,10 +27,6 @@ int main() {
     need3.push_back(0);
     need3.push_back(0);
     moves.push_back(need3);
-    for (int j = 0; j < moves.size(); ++j) {
-        cout << moves[j][0] << " " << moves[j][1] << endl;
-    }
-    cout << endl;
     for (int i = 1; i <= k; ++i) {
         need4.clear();
         for (int j = 0; j < moves.size(); ++j) {
@@ -69,10 +65,6 @@ int main() {
         }
         moves.clear();
         moves = need4;
-        for (int j = 0; j < moves.size(); ++j) {
-            cout << moves[j][0] << " " << moves[j][1] << endl;
-        }
-        cout << endl;
     }
     for (int i = 0; i < moves.size(); ++i) {
         if (moves[i][0] == n - 1 && moves[i][1] == n - 1) {
